@@ -58,7 +58,7 @@ header {
 header h1 {
     margin: 0;
     color: #ffffff; /* Fonte branca para o nome */
-    font-size: 18px; /* Tamanho da fonte igual ao dos botões */
+    font-size: 20px; /* Tamanho da fonte igual ao dos botões */
     overflow: hidden; /* Garante que o texto seja cortado corretamente */
     white-space: nowrap; /* Impede a quebra de linha */
     animation: typing 3.5s steps(40, end);
@@ -83,7 +83,7 @@ nav ul {
 }
 
 nav ul li {
-    font-size: 17px;
+    font-size: 20px;
     position: relative;
     padding: 10px;
     cursor: pointer; /* Adiciona cursor apontador */
