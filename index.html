@@ -21,6 +21,7 @@
             justify-content: center; /* Alinha os itens ao centro */
             list-style-type: none; /* Remove os marcadores de lista */
             padding: 0;
+            flex-wrap: wrap; /* Permite que os itens quebrem a linha */
         }
 
         nav ul li {
@@ -43,6 +44,44 @@
 
         nav ul li:hover::after {
             width: 100%; /* Mostra o sombreamento ao passar o mouse */
+        }
+
+        .container {
+            padding: 20px;
+        }
+
+        section#home {
+            text-align: center;
+        }
+
+        section#home h2,
+        section#home p {
+            margin-bottom: 20px;
+            word-wrap: break-word; /* Quebra de linha para palavras longas */
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 10px;
+            }
+
+            header h1 {
+                font-size: 1.2em; /* Reduz o tamanho da fonte do título */
+                margin: 10px 0;
+            }
+
+            section#home h2 {
+                font-size: 1.5em; /* Ajusta o tamanho da fonte */
+            }
+
+            section#home p {
+                font-size: 1em; /* Ajusta o tamanho da fonte */
+            }
+
+            nav ul li {
+                font-size: 16px; /* Reduz o tamanho da fonte dos itens do menu */
+                padding: 5px;
+            }
         }
     </style>
 </head>

@@ -29,6 +29,7 @@ header {
     background-size: 400% 400%;
     animation: gradient 15s ease infinite;
     color: white;
+    flex-wrap: wrap; /* Permite quebra de linha para itens do cabeçalho */
 }
 
 header h1 {
@@ -151,44 +152,38 @@ footer {
 .button:hover,
 .button:focus,
 .button:active {
-    background-color: #2d2af5;
+    background-color: #2d2af5; /* Cor ao passar o mouse */
 }
 
-/* Ajuste para dispositivos móveis (até 768px de largura) */
+/* Estilos responsivos */
 @media (max-width: 768px) {
     header {
-        flex-direction: column; /* Coloca o cabeçalho em coluna em telas menores */
-        text-align: center; /* Centraliza o texto no cabeçalho */
+        flex-direction: column; /* Alinha itens verticalmente em dispositivos móveis */
+        text-align: center; /* Centraliza o texto do cabeçalho */
     }
 
     header h1 {
-        margin-left: 0; /* Remove a margem à esquerda do título */
-        margin-bottom: 10px; /* Espaçamento inferior ao título */
+        font-size: 1.2em; /* Reduz o tamanho da fonte do título */
+        margin: 10px 0;
     }
 
     nav ul {
-        flex-direction: column; /* Coloca os itens do menu em coluna */
-        align-items: center; /* Centraliza os itens do menu */
+        flex-direction: column; /* Alinha os itens verticalmente */
     }
 
     nav ul li {
-        margin-bottom: 10px; /* Espaçamento entre os itens do menu */
+        margin-bottom: 10px; /* Espaçamento entre os itens */
+    }
+
+    section h2 {
+        font-size: 1.5em; /* Ajusta o tamanho da fonte */
+    }
+
+    section p {
+        font-size: 1em; /* Ajusta o tamanho da fonte */
     }
 
     footer {
-        font-size: 0.7em; /* Reduz ainda mais o tamanho da fonte para dispositivos móveis */
-        padding: 5px; /* Reduz ainda mais o padding do rodapé para dispositivos móveis */
-    }
-
-    /* Ajustes adicionais para os links de navegação */
-    nav ul li a {
-        padding: 5px; /* Reduz o padding dos links */
-        font-size: 0.9em; /* Reduz o tamanho da fonte dos links */
-    }
-
-    /* Ajuste para botões em dispositivos móveis */
-    .button {
-        padding: 10px 20px; /* Ajuste menor para botões em dispositivos móveis */
-        font-size: 0.9em;
+        padding: 20px 10px; /* Ajusta o padding do rodapé */
     }
 }
