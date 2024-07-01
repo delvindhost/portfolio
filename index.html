@@ -21,7 +21,7 @@
             justify-content: center; /* Alinha os itens ao centro */
             list-style-type: none; /* Remove os marcadores de lista */
             padding: 0;
-            flex-wrap: wrap; /* Permite que os itens quebrem a linha */
+            flex-wrap: nowrap; /* Não permite que os itens quebrem a linha */
         }
 
         nav ul li {
@@ -76,6 +76,12 @@
 
             section#home p {
                 font-size: 1em; /* Ajusta o tamanho da fonte */
+            }
+
+            nav ul {
+                flex-direction: row; /* Alinha os itens horizontalmente */
+                justify-content: center; /* Alinha os itens ao centro */
+                gap: 10px; /* Espaçamento entre os itens */
             }
 
             nav ul li {

@@ -145,8 +145,10 @@ footer {
     background-color: #0dd883;
     color: white;
     text-decoration: none;
-    border-radius: 5px;
+    border-radius: 5px; /* Borda arredondada */
+    margin: 10px 5px; /* Espaçamento entre os botões */
     transition: background-color 0.3s ease; /* Transições suaves */
+    cursor: pointer; /* Cursor de ponteiro para botões */
 }
 
 .button:hover,
@@ -157,6 +159,10 @@ footer {
 
 /* Estilos responsivos */
 @media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
     header {
         flex-direction: column; /* Alinha itens verticalmente em dispositivos móveis */
         text-align: center; /* Centraliza o texto do cabeçalho */
@@ -168,22 +174,25 @@ footer {
     }
 
     nav ul {
-        flex-direction: column; /* Alinha os itens verticalmente */
+        justify-content: center; /* Alinha os itens ao centro */
+        gap: 10px; /* Espaçamento entre os itens */
+        flex-wrap: nowrap; /* Não permite quebra de linha */
     }
 
     nav ul li {
         margin-bottom: 10px; /* Espaçamento entre os itens */
+        font-size: 1em; /* Ajusta o tamanho da fonte */
     }
 
-    section h2 {
+    section#home h2 {
         font-size: 1.5em; /* Ajusta o tamanho da fonte */
     }
 
-    section p {
+    section#home p {
         font-size: 1em; /* Ajusta o tamanho da fonte */
     }
 
     footer {
-        padding: 20px 10px; /* Ajusta o padding do rodapé */
+        padding: 10px; /* Ajusta o padding do rodapé */
     }
 }
