@@ -81,11 +81,13 @@ nav ul li {
     font-size: 17px;
     position: relative;
     padding: 10px;
+    cursor: pointer; /* Adiciona cursor apontador */
 }
 
 nav ul li a {
     color: #ffffff; /* Fonte branca para os botões de navegação */
     text-decoration: none;
+    display: block; /* Transforma o link em bloco para ocupar a largura do pai */
 }
 
 nav ul li::after {
@@ -181,4 +183,46 @@ section#projetos h2 {
 #contato {
     margin-bottom: 60px;
     text-align: center; /* Centraliza todo o conteúdo dentro do elemento com id="contato" */
+}
+
+/* Estilos para telas menores (responsivo) */
+@media only screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    header h1 {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        padding: 8px 0;
+    }
+
+    nav ul li::after {
+        display: none; /* Remove a linha sob o link */
+    }
+
+    .contact-icons {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* Estilos para telas muito pequenas (celulares) */
+@media only screen and (max-width: 480px) {
+    nav ul li {
+        font-size: 15px;
+    }
+
+    .contact-icons {
+        font-size: 20px;
+    }
 }
