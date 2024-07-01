@@ -111,7 +111,7 @@ article p {
 
 footer {
     text-align: center;
-    padding: 20px;
+    padding: 10px; /* Reduz o padding do rodapé para dispositivos móveis */
     background: linear-gradient(270deg, #0dd883, #2d2af5);
     background-size: 400% 400%;
     animation: gradient 15s ease infinite;
@@ -119,6 +119,7 @@ footer {
     width: 100%;
     position: absolute;
     bottom: 0;
+    font-size: 0.8em; /* Reduz o tamanho da fonte para dispositivos móveis */
 }
 
 @keyframes gradient {
@@ -184,5 +185,16 @@ footer {
 
     nav ul li {
         margin-bottom: 10px; /* Espaçamento entre os itens do menu */
+    }
+
+    footer {
+        font-size: 0.7em; /* Reduz ainda mais o tamanho da fonte para dispositivos móveis */
+        padding: 5px; /* Reduz ainda mais o padding do rodapé para dispositivos móveis */
+    }
+
+    /* Ajustes adicionais para os links de navegação */
+    nav ul li a {
+        padding: 5px; /* Reduz o padding dos links */
+        font-size: 0.9em; /* Reduz o tamanho da fonte dos links */
     }
 }
