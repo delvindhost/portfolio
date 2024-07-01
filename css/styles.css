@@ -135,6 +135,21 @@ footer {
     }
 }
 
+/* Efeitos para botões */
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #0dd883;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #2d2af5;
+}
+
 /* Ajustes para dispositivos móveis (até 768px de largura) */
 @media (max-width: 768px) {
     header {
@@ -165,5 +180,11 @@ footer {
     nav ul li a {
         padding: 5px; /* Reduz o padding dos links */
         font-size: 0.9em; /* Reduz o tamanho da fonte dos links */
+    }
+
+    /* Ajuste para botões em dispositivos móveis */
+    .button {
+        padding: 8px 16px;
+        font-size: 0.9em;
     }
 }
