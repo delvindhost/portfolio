@@ -194,3 +194,23 @@ footer {
         padding: 10px; /* Ajusta o padding do rodapé */
     }
 }
+/* Estilos adicionais para a página de contato */
+body {
+    background-color: #f8f9fa;
+    color: #333;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Para ocupar a altura total da viewport */
+}
+
+.container {
+    flex: 1; /* Para ocupar o espaço restante */
+    padding: 20px;
+    /* overflow-y: auto; Remova esta linha para evitar a barra de rolagem vertical */
+}
+
+#contato {
+    margin-bottom: 60px; /* Ajuste para garantir que o conteúdo não fique escondido sob o rodapé */
+}
