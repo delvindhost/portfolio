@@ -201,6 +201,7 @@ section#projetos h2 {
     nav {
         text-align: center; /* Centraliza os links na horizontal */
         margin-top: 10px; /* Espaçamento acima dos links */
+        align-items: center;
     }
 
     nav ul {
