@@ -6,10 +6,24 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    background: linear-gradient(270deg, #0dd883, #2d2af5);
-    animation: gradientAnimation 10s ease infinite alternate;
     overflow-y: scroll; /* Ativa a rolagem vertical */
     overflow-x: hidden; /* Esconde a rolagem horizontal */
+    background: linear-gradient(270deg, #0dd883, #2d2af5);
+    background-size: 400% 400%;
+    animation: gradientAnimation 20s ease infinite;
+}
+
+/* Animação de gradiente */
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
 }
 
 /* Estilos da barra de rolagem */
@@ -32,15 +46,6 @@ body::-webkit-scrollbar-thumb {
 body {
     scrollbar-width: thin;
     scrollbar-color: #2d2af5 #0dd883;
-}
-
-@keyframes gradientAnimation {
-    0% {
-        background-position: 0% 50%;
-    }
-    100% {
-        background-position: 100% 50%;
-    }
 }
 
 header {
@@ -112,16 +117,30 @@ nav ul li:hover::after {
 
 footer {
     text-align: center;
-    padding: 02px;
+    padding: 10px 0;
     background: linear-gradient(270deg, #0dd883, #2d2af5);
     color: #ffffff; /* Fonte branca para os direitos autorais */
     position: relative;
     bottom: 0;
     left: 0;
     width: 100%;
-    animation: gradientAnimation 10s ease infinite alternate;
+    background-size: 400% 400%;
+    animation: gradientAnimation 20s ease infinite;
     font-size: 0.80em;
 }
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
 
 /* Estilos específicos para a página Home */
 section#home {
@@ -139,9 +158,7 @@ section#home h2 {
     font-weight: normal; /* Remove o negrito */
 }
 
-
 /* Estilos específicos para a página de Projetos */
-
 section#projetos h2 {
     margin-bottom: 20px;
     font-size: 1.1em;
@@ -150,40 +167,21 @@ section#projetos h2 {
 }
 
 /* Estilos adicionais para a página de Contato */
-.contact-icons {
-    font-size: 24px;
-    display: flex;
-    justify-content: center;
-    margin-bottom: 10px;
-}
-
-.contact-icons a {
-    color: #333;
-    margin-right: 10px;
-}
-
-.contact-icons a:hover {
-    color: #0dd883;
-}
-
 .formation-info,
 .language-info {
     background-color: rgba(0, 0, 0, 0.1);
     padding: 10px;
     border-radius: 10px;
     margin-bottom: 10px;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Adiciona transição para cor do texto */
     text-align: center; /* Centraliza o texto */
+    color: #000000; /* Cor do texto inicial */
 }
 
 .formation-info:hover,
 .language-info:hover {
-    background-color: rgba(255, 255, 255, 0.7); /* Fundo branco ao passar o mouse ou tocar */
-}
-
-#contato {
-    margin-bottom: 60px;
-    text-align: center; /* Centraliza todo o conteúdo dentro do elemento com id="contato" */
+    background-color: #ffffff; /* Fundo branco ao passar o mouse ou tocar */
+    color: #000000; /* Cor do texto ao passar o mouse ou tocar */
 }
 
 /* Estilos para telas menores (responsivo) */
@@ -221,6 +219,11 @@ section#projetos h2 {
     .contact-icons {
         flex-direction: horizontal;
         align-items: center;
+    }
+
+    /* Centraliza os botões de navegação */
+    nav ul {
+        justify-content: center;
     }
 }
 
