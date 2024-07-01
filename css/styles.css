@@ -129,19 +129,6 @@ footer {
     font-size: 0.80em;
 }
 
-@keyframes gradientAnimation {
-    0% {
-        background-position: 0% 50%;
-    }
-    50% {
-        background-position: 100% 50%;
-    }
-    100% {
-        background-position: 0% 50%;
-    }
-}
-
-
 /* Estilos específicos para a página Home */
 section#home {
     text-align: center;
@@ -167,6 +154,22 @@ section#projetos h2 {
 }
 
 /* Estilos adicionais para a página de Contato */
+.contact-icons {
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.contact-icons a {
+    color: #333;
+    margin-right: 10px;
+}
+
+.contact-icons a:hover {
+    color: #0dd883;
+}
+
 .formation-info,
 .language-info {
     background-color: rgba(0, 0, 0, 0.1);
@@ -182,6 +185,11 @@ section#projetos h2 {
 .language-info:hover {
     background-color: #ffffff; /* Fundo branco ao passar o mouse ou tocar */
     color: #000000; /* Cor do texto ao passar o mouse ou tocar */
+}
+
+#contato {
+    margin-bottom: 60px;
+    text-align: center; /* Centraliza todo o conteúdo dentro do elemento com id="contato" */
 }
 
 /* Estilos para telas menores (responsivo) */
@@ -221,9 +229,21 @@ section#projetos h2 {
         align-items: center;
     }
 
-    /* Centraliza os botões de navegação */
-    nav ul {
-        justify-content: center;
+    .formation-info,
+    .language-info {
+        background-color: rgba(0, 0, 0, 0.1);
+        padding: 10px;
+        border-radius: 10px;
+        margin-bottom: 10px;
+        transition: background-color 0.3s ease, color 0.3s ease; /* Adiciona transição para cor do texto */
+        text-align: center; /* Centraliza o texto */
+        color: #000000; /* Cor do texto inicial */
+    }
+
+    .formation-info:hover,
+    .language-info:hover {
+        background-color: #ffffff; /* Fundo branco ao passar o mouse ou tocar */
+        color: #000000; /* Cor do texto ao passar o mouse ou tocar */
     }
 }
 
