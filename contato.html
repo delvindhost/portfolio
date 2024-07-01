@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <style>
-        /* Estilos para a página de Contato */
+        /* Estilos adicionais para a página de contato */
         body {
             background-color: #f8f9fa;
             color: #333;
@@ -85,7 +85,6 @@
                 font-size: 14px;
             }
         }
-
         @media (max-width: 768px) {
             .container {
                 padding: 10px;
@@ -96,10 +95,23 @@
                 margin: 10px 0;
             }
 
-            section#contato .formation-info, 
-            section#contato .language-info {
-                font-size: 16px; /* Ajusta o tamanho da fonte */
-                padding: 10px;
+            section#home h2 {
+                font-size: 1.5em; /* Ajusta o tamanho da fonte */
+            }
+
+            section#home p {
+                font-size: 1em; /* Ajusta o tamanho da fonte */
+            }
+
+            nav ul {
+                flex-direction: row; /* Alinha os itens horizontalmente */
+                justify-content: center; /* Alinha os itens ao centro */
+                gap: 10px; /* Espaçamento entre os itens */
+            }
+
+            nav ul li {
+                font-size: 16px; /* Reduz o tamanho da fonte dos itens do menu */
+                padding: 5px;
             }
         }
     </style>
