@@ -198,13 +198,19 @@ section#projetos h2 {
         margin-bottom: 10px;
     }
 
+    nav {
+        text-align: center; /* Centraliza os links na horizontal */
+        margin-top: 10px; /* Espaçamento acima dos links */
+    }
+
     nav ul {
-        flex-direction: column;
-        align-items: center;
+        display: flex;
+        justify-content: center; /* Centraliza os itens na horizontal */
+        gap: 10px;
     }
 
     nav ul li {
-        padding: 8px 0;
+        padding: 8px 10px; /* Adiciona um espaçamento interno */
     }
 
     nav ul li::after {
