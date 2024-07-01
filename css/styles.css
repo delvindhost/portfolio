@@ -259,3 +259,54 @@ section#projetos h2 {
         font-size: 20px;
     }
 }
+/* Estilos para o ícone do menu hambúrguer */
+.menu-toggle {
+    display: none; /* Inicia oculto em telas maiores */
+    cursor: pointer;
+    padding: 10px;
+}
+
+.hamburger {
+    width: 30px;
+    height: 3px;
+    background-color: #ffffff;
+    margin: 6px 0;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Estilos para mostrar o menu em telas menores */
+@media only screen and (max-width: 768px) {
+    .menu-toggle {
+        display: flex;
+        align-items: center;
+    }
+
+    nav {
+        display: none;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: #2d2af5;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+
+    nav.active {
+        display: block;
+    }
+
+    .hamburger.active {
+        transform: rotate(90deg);
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    nav ul li {
+        font-size: 18px;
+    }
+}
