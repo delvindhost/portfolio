@@ -65,11 +65,13 @@ nav ul li a {
     text-decoration: none;
     font-size: 1em;
     padding: 10px; /* Espaçamento interno dos links */
-    transition: background-color 0.3s ease; /* Transição suave */
+    transition: background-color 0.3s ease, border-bottom-color 0.3s ease; /* Transições suaves */
+    border-bottom: 2px solid transparent; /* Linha inferior transparente por padrão */
 }
 
 nav ul li a:hover {
     background-color: rgba(255, 255, 255, 0.1); /* Sombreamento ao passar o mouse */
+    border-bottom-color: black; /* Linha inferior preta ao passar o mouse */
     border-radius: 5px; /* Borda arredondada */
 }
 
@@ -135,22 +137,24 @@ footer {
     }
 }
 
-/* Efeitos para botões */
+/* Ajuste para botões */
 .button {
     display: inline-block;
-    padding: 10px 20px;
+    padding: 12px 24px; /* Aumenta o tamanho do botão */
     background-color: #0dd883;
     color: white;
     text-decoration: none;
     border-radius: 5px;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, border-bottom-color 0.3s ease; /* Transições suaves */
+    border-bottom: 2px solid transparent; /* Linha inferior transparente por padrão */
 }
 
 .button:hover {
     background-color: #2d2af5;
+    border-bottom-color: black; /* Linha inferior preta ao passar o mouse */
 }
 
-/* Ajustes para dispositivos móveis (até 768px de largura) */
+/* Ajuste para dispositivos móveis (até 768px de largura) */
 @media (max-width: 768px) {
     header {
         flex-direction: column; /* Coloca o cabeçalho em coluna em telas menores */
@@ -184,7 +188,7 @@ footer {
 
     /* Ajuste para botões em dispositivos móveis */
     .button {
-        padding: 8px 16px;
+        padding: 10px 20px; /* Ajuste menor para botões em dispositivos móveis */
         font-size: 0.9em;
     }
 }
