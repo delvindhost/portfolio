@@ -55,7 +55,7 @@
             padding: 10px;
             background-color: #0dd883;
             color: white;
-            position: fixed;
+            position: relative; /* Para garantir que o rodapé apareça no final da página */
             bottom: 0;
             left: 0;
             width: 100%;
@@ -63,6 +63,27 @@
 
         #contato {
             margin-bottom: 60px; /* Ajuste para garantir que o conteúdo não fique escondido sob o rodapé */
+        }
+
+        /* Estilos responsivos */
+        @media (max-width: 600px) {
+            header {
+                text-align: center;
+            }
+
+            nav ul {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .contact-icons {
+                font-size: 20px;
+            }
+
+            .formation-info, .language-info {
+                font-size: 14px;
+            }
         }
     </style>
 </head>
@@ -113,5 +134,16 @@
     <footer>
         <p>&copy; 2024 Edvandro Douglas Palma Lopes. Todos os direitos reservados.</p>
     </footer>
+    <script>
+        // Efeitos de toque para dispositivos móveis
+        document.querySelectorAll('.formation-info, .language-info').forEach(box => {
+            box.addEventListener('touchstart', () => {
+                box.style.backgroundColor = 'rgba(255, 255, 255, 0.7)';
+            });
+            box.addEventListener('touchend', () => {
+                box.style.backgroundColor = 'rgba(0, 0, 0, 0.1)';
+            });
+        });
+    </script>
 </body>
 </html>
