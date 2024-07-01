@@ -142,51 +142,23 @@ footer {
     color: white;
     text-decoration: none;
     border-radius: 5px; /* Borda arredondada */
-    margin: 10px 5px; /* Espaçamento entre os botões */
+    margin: 5px; /* Ajuste no espaçamento entre os botões */
     transition: background-color 0.3s ease; /* Transições suaves */
     cursor: pointer; /* Cursor de ponteiro para botões */
 }
 
-.button:active {
+.button:hover {
     background-color: #2d2af5; /* Cor ao passar o mouse */
 }
 
-/* Estilos responsivos */
-@media (max-width: 768px) {
-    .container {
-        padding: 10px;
-    }
+/* Ajuste para a animação de digitação */
+.typing-animation {
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typing 4s steps(30, end);
+}
 
-    header {
-        flex-direction: column; /* Alinha itens verticalmente em dispositivos móveis */
-        text-align: center; /* Centraliza o texto do cabeçalho */
-    }
-
-    header h1 {
-        font-size: 1em; /* Reduz o tamanho da fonte do título */
-        margin: 10px 0;
-    }
-
-    nav ul {
-        justify-content: center; /* Alinha os itens ao centro */
-        gap: 10px; /* Espaçamento entre os itens */
-        flex-wrap: wrap; /* Não permite quebra de linha */
-    }
-
-    nav ul li {
-        margin-bottom: 10px; /* Espaçamento entre os itens */
-        font-size: 1em; /* Ajusta o tamanho da fonte */
-    }
-
-    section#home h2 {
-        font-size: 1em; /* Ajusta o tamanho da fonte */
-    }
-
-    section#home p {
-        font-size: 1em; /* Ajusta o tamanho da fonte */
-    }
-
-    footer {
-        padding: 10px; /* Ajusta o padding do rodapé */
-    }
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
 }
