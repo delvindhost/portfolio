@@ -5,6 +5,84 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projetos - Douglas Vini</title>
     <link rel="stylesheet" href="css/styles.css">
+    <style>
+        /* Estilos para a página de Projetos */
+        body {
+            font-family: 'Roboto', sans-serif;
+            font-size: 16px;
+        }
+
+        header {
+            text-align: center;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style-type: none;
+            padding: 0;
+            gap: 10px;
+        }
+
+        nav ul li {
+            font-size: 18px;
+            position: relative;
+            padding: 10px;
+        }
+
+        nav ul li::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: #000;
+            transition: width 0.3s ease;
+        }
+
+        nav ul li:hover::after {
+            width: 100%;
+        }
+
+        .container {
+            padding: 20px;
+        }
+
+        section#projetos {
+            text-align: center;
+        }
+
+        section#projetos h2 {
+            margin-bottom: 20px;
+            font-size: 1.5em;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 10px;
+            }
+
+            header h1 {
+                font-size: 1.2em;
+                margin: 10px 0;
+            }
+
+            section#projetos h2 {
+                font-size: 1.5em;
+            }
+
+            nav ul {
+                flex-direction: row;
+                justify-content: center;
+            }
+
+            nav ul li {
+                font-size: 16px;
+                padding: 5px;
+            }
+        }
+    </style>
 </head>
 <body>
     <header>
