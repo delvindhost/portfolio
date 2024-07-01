@@ -120,7 +120,7 @@ footer {
     left: 0;
     width: 100%;
     animation: gradientAnimation 10s ease infinite alternate;
-    font-size: 0.60em;
+    font-size: 0.80em;
 }
 
 /* Estilos específicos para a página Home */
@@ -218,7 +218,7 @@ section#projetos h2 {
     }
 
     .contact-icons {
-        flex-direction: column;
+        flex-direction: horizontal;
         align-items: center;
     }
 }
