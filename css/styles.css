@@ -83,6 +83,7 @@ nav ul li a:hover {
 
 section {
     margin: 20px 0;
+    text-align: center; /* Centraliza o conteúdo das seções */
 }
 
 section h2 {
@@ -134,39 +135,7 @@ footer {
     }
 }
 
-/* Centraliza o texto nas seções home, projetos e contato */
-#home, #projetos, #contato {
-    text-align: center;
-}
-
-.contact-icons {
-    font-size: 24px;
-    margin-bottom: 10px;
-}
-
-.contact-icons a {
-    color: #333; /* Cor dos ícones */
-    margin-right: 10px; /* Espaçamento entre os ícones */
-}
-
-.contact-icons a:hover {
-    color: #0dd883; /* Cor ao passar o mouse */
-}
-
-/* Media queries para ajustes responsivos */
-
-/* Tablets e dispositivos maiores que 768px de largura */
-@media (min-width: 768px) {
-    nav ul {
-        gap: 30px; /* Aumenta o espaçamento entre os itens do menu */
-    }
-
-    header h1 {
-        font-size: 2em; /* Aumenta o tamanho do título no cabeçalho */
-    }
-}
-
-/* Dispositivos menores que 768px (tablets em modo retrato e celulares) */
+/* Ajustes para dispositivos móveis (até 768px de largura) */
 @media (max-width: 768px) {
     header {
         flex-direction: column; /* Coloca o cabeçalho em coluna em telas menores */
