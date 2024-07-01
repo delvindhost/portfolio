@@ -165,8 +165,18 @@ footer {
     }
 }
 
-/* Dispositivos menores que 576px (celulares em modo retrato) */
-@media (max-width: 575px) {
+/* Dispositivos menores que 768px (tablets em modo retrato e celulares) */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column; /* Coloca o cabeçalho em coluna em telas menores */
+        text-align: center; /* Centraliza o texto no cabeçalho */
+    }
+
+    header h1 {
+        margin-left: 0; /* Remove a margem à esquerda do título */
+        margin-bottom: 10px; /* Espaçamento inferior ao título */
+    }
+
     nav ul {
         flex-direction: column; /* Coloca os itens do menu em coluna */
         align-items: center; /* Centraliza os itens do menu */
