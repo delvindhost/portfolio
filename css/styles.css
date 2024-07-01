@@ -147,8 +147,6 @@ footer {
     cursor: pointer; /* Cursor de ponteiro para botões */
 }
 
-.button:hover,
-.button:focus,
 .button:active {
     background-color: #2d2af5; /* Cor ao passar o mouse */
 }
@@ -165,14 +163,14 @@ footer {
     }
 
     header h1 {
-        font-size: 1.2em; /* Reduz o tamanho da fonte do título */
+        font-size: 1em; /* Reduz o tamanho da fonte do título */
         margin: 10px 0;
     }
 
     nav ul {
         justify-content: center; /* Alinha os itens ao centro */
         gap: 10px; /* Espaçamento entre os itens */
-        flex-wrap: nowrap; /* Não permite quebra de linha */
+        flex-wrap: wrap; /* Não permite quebra de linha */
     }
 
     nav ul li {
@@ -181,7 +179,7 @@ footer {
     }
 
     section#home h2 {
-        font-size: 1.5em; /* Ajusta o tamanho da fonte */
+        font-size: 1em; /* Ajusta o tamanho da fonte */
     }
 
     section#home p {
