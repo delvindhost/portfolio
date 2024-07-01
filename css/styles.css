@@ -267,10 +267,10 @@ section#projetos h2 {
 }
 
 .hamburger {
-    width: 30px; /* Largura dos traços do hambúrguer */
-    height: 3px; /* Altura dos traços do hambúrguer */
+    width: 30px;
+    height: 3px;
     background-color: #ffffff;
-    margin: 6px 0; /* Espaçamento vertical entre os traços */
+    margin: 6px 0;
     transition: transform 0.3s ease-in-out;
 }
 
