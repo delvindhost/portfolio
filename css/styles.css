@@ -33,7 +33,7 @@ header {
 }
 
 header h1 {
-    font-size: 1.5em;
+    font-size: 1.1em;
     overflow: hidden; /* Esconder texto adicional */
     white-space: nowrap; /* Manter em uma linha */
     margin-left: 20px; /* Ajuste para alinhar à esquerda */
@@ -70,8 +70,6 @@ nav ul li a {
     border-radius: 5px; /* Borda arredondada */
 }
 
-nav ul li a:hover,
-nav ul li a:focus,
 nav ul li a:active {
     background-color: rgba(255, 255, 255, 0.1); /* Sombreamento ao passar o mouse */
 }
@@ -121,7 +119,7 @@ footer {
     animation: gradient 15s ease infinite;
     color: white;
     width: 100%;
-    font-size: 0.8em; /* Reduz o tamanho da fonte para dispositivos móveis */
+    font-size: 0.5em; /* Reduz o tamanho da fonte para dispositivos móveis */
 }
 
 @keyframes gradient {
