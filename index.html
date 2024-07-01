@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio de Douglas Vini</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        .typing-animation {
+            overflow: hidden;
+            white-space: nowrap;
+            animation: typing 4s steps(30, end);
+        }
+        @keyframes typing {
+            from { width: 0 }
+            to { width: 100% }
+        }
+         /* Estilo para os links */
+         nav ul li {
+            display: inline;
+            padding: 10px;
+            font-size: 18px;
+            position: relative;
+        }
+
+        /* Estilo de sombreamento */
+        nav ul li:hover::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background-color: #000; /* Cor do sombreamento */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 class="robotic-text">Douglas Vini</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projetos.html">Projetos</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <section id="home">
+            <h2><span class="typing-animation">Bem-vindo</span></h2>
+            <p><span class="typing-animation">Eu sou um desenvolvedor de software e faço programação com paixão</span></p>
+        </section>
+        <section id="projetos">
+            <h2></h2>
+            <article>
+                <h3></h3>
+                <p></p>
+            </article>
+            <article>
+                <h3></h3>
+                <p></p>
+            </article>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2024 Douglas Vini. Todos os direitos reservados.</p>
+    </footer>
+    <script>
+        // JavaScript para iniciar a animação de digitação após o carregamento da página
+        document.addEventListener('DOMContentLoaded', function () {
+            var elements = document.querySelectorAll('.typing-animation');
+            elements.forEach(function (element) {
+                var text = element.textContent;
+                element.innerHTML = ''; // Limpa o texto original
+                var span = document.createElement('span');
+                element.appendChild(span);
+                var index = 0;
+                var timer = setInterval(function () {
+                    span.textContent += text[index];
+                    index++;
+                    if (index === text.length) {
+                        clearInterval(timer);
+                    }
+                }, 100); // Velocidade da digitação (100ms)
+            });
+        });
+    </script>
+</body>
+</html>
