@@ -217,7 +217,7 @@ section#projetos {
 }
 
 .contact-icons a {
-    color: #333;
+    color: #ffffff;
     margin-right: 10px;
 }
 
@@ -231,13 +231,13 @@ section#projetos {
 
 .formation-info,
 .language-info {
-    background-color: rgba(0, 0, 0, 0.1);
+    background-color: rgba(0, 0, 0, 0.215);
     padding: 10px;
     border-radius: 10px;
     margin-bottom: 10px;
     transition: background-color 0.3s ease, color 0.3s ease; /* Adiciona transição para cor do texto */
     text-align: center; /* Centraliza o texto */
-    color: #000000; /* Cor do texto inicial */
+    color: #ffffff; /* Cor do texto inicial */
 }
 
 .formation-info:hover,
