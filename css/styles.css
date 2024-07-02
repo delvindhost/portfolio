@@ -10,7 +10,7 @@ body {
     min-height: 100vh;
     overflow-y: scroll; /* Ativa a rolagem vertical */
     overflow-x: hidden; /* Esconde a rolagem horizontal */
-    background: linear-gradient(270deg, #0dd883, #2d2af5);
+    background: linear-gradient(270deg, #0a6be2, #0912c3, #410bad);
     background-size: 400% 400%;
     animation: gradientAnimation 20s ease infinite;
 }
