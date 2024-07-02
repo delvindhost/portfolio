@@ -334,7 +334,7 @@ section#projetos {
     width: 30px;
     height: 3px;
     background-color: #ffffff;
-    margin: 4px 0;
+    margin: 4px 0; /* Reduz a margem vertical para aproximar os travessões */
     transition: transform 0.3s ease-in-out;
 }
 
