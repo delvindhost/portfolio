@@ -157,7 +157,7 @@ section#projetos {
 
 .project-box {
     display: flex;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Ajusta a largura mínima e máxima das colunas */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Ajusta a largura mínima e máxima das colunas */
     gap: 30px; /* Espaçamento entre as caixas de projeto */
     margin-top: 10px;
     justify-content: center;
@@ -185,7 +185,7 @@ section#projetos {
 }
 
 .projeto img {
-    width: 60%; /* Garante que a imagem ocupe toda a largura da caixa */
+    width: 40%; /* Garante que a imagem ocupe toda a largura da caixa */
     border-radius: 10px;
     margin-bottom: 10px;
 }
