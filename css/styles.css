@@ -185,7 +185,7 @@ section#projetos {
 }
 
 .projeto img {
-    width: 40%; /* Garante que a imagem ocupe toda a largura da caixa */
+    width: 60%; /* Garante que a imagem ocupe toda a largura da caixa */
     border-radius: 10px;
     margin-bottom: 10px;
 }
