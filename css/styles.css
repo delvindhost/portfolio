@@ -167,20 +167,23 @@ section#projetos {
     padding: 10px;
     border-radius: 10px;
     text-align: center;
-    box-shadow: 0 4px 8px rgba(23, 13, 218, 0.1);
+    box-shadow: 0 4px 8px rgba(157, 153, 239, 0.344);
     transition: background-color 0.3s ease; /* Transição suave para a cor de fundo */
     margin: 15px; /* Adiciona espaçamento ao redor de cada projeto */
 }
 
 /* Efeito de hover para mouse */
-.projeto:hover {
-    background-color: rgba(43, 14, 235, 0.5); /* Torna o fundo mais branco ao passar o mouse */
+.projeto:hover,
+@media (hover: hover) and (pointer: fine) {
+    .projeto:hover {
+        background-color: rgba(43, 14, 235, 0.5); /* Torna o fundo mais branco ao passar o mouse */
+    }
 }
 
-/* Efeito de hover para dispositivos digitais */
-@media (hover: hover), (pointer: fine) {
-    .projeto:hover {
-        background-color: rgba(43, 14, 235, 0.5); /* Torna o fundo mais branco ao passar o mouse ou o dedo */
+/* Efeito de toque para dispositivos de toque */
+@media (hover: none) and (pointer: coarse) {
+    .projeto:active {
+        background-color: rgba(43, 14, 235, 0.5); /* Torna o fundo mais branco ao tocar no dispositivo */
     }
 }
 
@@ -202,7 +205,6 @@ section#projetos {
         gap: 20px; /* Reduz o espaçamento */
     }
 }
-
 
 
 /* Estilos adicionais para a página de Contato */
@@ -239,14 +241,14 @@ section#projetos {
 
 .formation-info:hover,
 .language-info:hover {
-    background-color: #ffffff; /* Fundo branco ao passar o mouse ou tocar */
+    background-color: #ffffffc3; /* Fundo branco ao passar o mouse ou tocar */
     color: #000000; /* Cor do texto ao passar o mouse ou tocar */
 }
 
 /* Efeito de hover para dispositivos digitais */
 @media (hover: hover), (pointer: fine) {
     .projeto:hover {
-        background-color: rgba(225, 222, 241, 0.378); /* Torna o fundo mais branco ao passar o mouse ou o dedo */
+        background-color: rgba(41, 12, 209, 0.627); /* Torna o fundo mais branco ao passar o mouse ou o dedo */
     }
 }
 #contato {
