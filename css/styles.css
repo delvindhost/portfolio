@@ -325,6 +325,9 @@ section#projetos {
     display: none; /* Inicia oculto em telas maiores */
     cursor: pointer;
     padding: 10px;
+    position: absolute; /* Posiciona o ícone do menu no canto direito */
+    right: 10px; /* Define a distância do lado direito */
+    top: 15px; /* Define a distância do topo */
 }
 
 .hamburger {
@@ -348,7 +351,7 @@ section#projetos {
         top: 60px;
         left: 0;
         width: 100%;
-        background-color: #2d2af5;
+        background-color: #2d2af5d2;
         padding: 20px;
         box-sizing: border-box;
     }
@@ -370,22 +373,4 @@ section#projetos {
     nav ul li {
         font-size: 18px;
     }
-}
-
-/* Estilos específicos para a caixa de formação e idiomas */
-.formation-info,
-.language-info {
-    background-color: rgba(0, 0, 0, 0.1);
-    padding: 10px;
-    border-radius: 10px;
-    margin-bottom: 10px;
-    transition: background-color 0.3s ease, color 0.3s ease; /* Adiciona transição para cor do texto */
-    text-align: center; /* Centraliza o texto */
-    color: #000000; /* Cor do texto inicial */
-}
-
-.formation-info:hover,
-.language-info:hover {
-    background-color: #ffffff; /* Fundo branco ao passar o mouse ou tocar */
-    color: #000000; /* Cor do texto ao passar o mouse ou tocar */
 }
