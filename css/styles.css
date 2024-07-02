@@ -171,6 +171,10 @@ section#projetos h2 {
     color: #0dd883;
 }
 
+.contact-icons a:last-child {
+    margin-right: 0; /* Remove a margem direita do último ícone */
+}
+
 .formation-info,
 .language-info {
     background-color: rgba(0, 0, 0, 0.1);
