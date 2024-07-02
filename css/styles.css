@@ -327,7 +327,7 @@ section#projetos {
     padding: 10px;
     position: absolute; /* Posiciona o ícone do menu no canto direito */
     right: 10px; /* Define a distância do lado direito */
-    top: 15px; /* Define a distância do topo */
+    top: 10px; /* Define a distância do topo */
 }
 
 .hamburger {
