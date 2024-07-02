@@ -156,11 +156,10 @@ section#projetos {
 }
 
 .project-box {
-    display: flex;
+    display: grid; /* Usa grid layout */
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Ajusta a largura mínima e máxima das colunas */
     gap: 30px; /* Espaçamento entre as caixas de projeto */
     margin-top: 10px;
-    justify-content: center;
 }
 
 .projeto {
@@ -170,6 +169,7 @@ section#projetos {
     text-align: center;
     box-shadow: 0 4px 8px rgba(23, 13, 218, 0.1);
     transition: background-color 0.3s ease; /* Transição suave para a cor de fundo */
+    margin: 15px; /* Adiciona espaçamento ao redor de cada projeto */
 }
 
 /* Efeito de hover para mouse */
@@ -185,7 +185,7 @@ section#projetos {
 }
 
 .projeto img {
-    width: 40%; /* Garante que a imagem ocupe toda a largura da caixa */
+    width: 40%; /* Ajusta a largura da imagem */
     border-radius: 10px;
     margin-bottom: 10px;
 }
@@ -202,6 +202,7 @@ section#projetos {
         gap: 20px; /* Reduz o espaçamento */
     }
 }
+
 
 
 /* Estilos adicionais para a página de Contato */
