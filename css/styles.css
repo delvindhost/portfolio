@@ -120,7 +120,7 @@ nav ul li:hover::after {
 footer {
     text-align: center;
     padding: 10px 0;
-    background: linear-gradient(270deg, #0dd883, #2d2af5);
+    background: linear-gradient(270deg, #0a6be2, #0912c3, #410bad);
     color: #ffffff; /* Fonte branca para os direitos autorais */
     position: relative;
     bottom: 0;
@@ -249,7 +249,7 @@ section#projetos {
 /* Efeito de hover para dispositivos digitais */
 @media (hover: hover), (pointer: fine) {
     .projeto:hover {
-        background-color: rgba(41, 12, 209, 0.627); /* Torna o fundo mais branco ao passar o mouse ou o dedo */
+        background-color: rgba(157, 142, 237, 0.627); /* Torna o fundo mais branco ao passar o mouse ou o dedo */
     }
 }
 #contato {
