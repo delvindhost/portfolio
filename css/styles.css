@@ -1,3 +1,5 @@
+/* styles.css */
+
 /* Estilos gerais para todo o site */
 body {
     font-family: 'Courier New', monospace; /* Fonte estilo programação */
@@ -147,11 +149,57 @@ section#home h2 {
 }
 
 /* Estilos específicos para a página de Projetos */
-section#projetos h2 {
-    margin-bottom: 20px;
-    font-size: 1.2em;
-    font-weight: normal; /* Remove o negrito */
+section#projetos {
+    margin: 0 auto; /* Centraliza o conteúdo horizontalmente */
+    max-width: 1000px; /* Define a largura máxima do conteúdo */
+}
+
+.project-box {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Ajusta a largura mínima e máxima das colunas */
+    gap: 30px; /* Espaçamento entre as caixas de projeto */
+    margin-top: 20px;
+    justify-content: center;
+}
+
+.projeto {
+    background-color: rgba(36, 34, 34, 0.27);
+    padding: 20px;
+    border-radius: 10px;
     text-align: center;
+    box-shadow: 0 4px 8px rgba(23, 13, 218, 0.1);
+    transition: background-color 0.3s ease; /* Transição suave para a cor de fundo */
+}
+
+/* Efeito de hover para mouse */
+.projeto:hover {
+    background-color: rgba(43, 14, 235, 0.5); /* Torna o fundo mais branco ao passar o mouse */
+}
+
+/* Efeito de hover para dispositivos digitais */
+@media (hover: hover), (pointer: fine) {
+    .projeto:hover {
+        background-color: rgba(43, 14, 235, 0.5); /* Torna o fundo mais branco ao passar o mouse ou o dedo */
+    }
+}
+
+.projeto img {
+    width: 25%; /* Garante que a imagem ocupe toda a largura da caixa */
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.projeto p {
+    font-size: 16px;
+    line-height: 1.4;
+}
+
+/* Estilos adicionais para telas menores */
+@media only screen and (max-width: 768px) {
+    .project-box {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Ajusta para telas menores */
+        gap: 20px; /* Reduz o espaçamento */
+    }
 }
 
 /* Estilos adicionais para a página de Contato */
@@ -314,4 +362,22 @@ section#projetos h2 {
     nav ul li {
         font-size: 18px;
     }
+}
+
+/* Estilos específicos para a caixa de formação e idiomas */
+.formation-info,
+.language-info {
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Adiciona transição para cor do texto */
+    text-align: center; /* Centraliza o texto */
+    color: #000000; /* Cor do texto inicial */
+}
+
+.formation-info:hover,
+.language-info:hover {
+    background-color: #ffffff; /* Fundo branco ao passar o mouse ou tocar */
+    color: #000000; /* Cor do texto ao passar o mouse ou tocar */
 }
