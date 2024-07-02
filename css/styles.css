@@ -152,19 +152,20 @@ section#home h2 {
 section#projetos {
     margin: 0 auto; /* Centraliza o conteúdo horizontalmente */
     max-width: 1000px; /* Define a largura máxima do conteúdo */
+    text-align: center; /* Alinha o texto ao centro */
 }
 
 .project-box {
-    display: grid;
+    display: flex;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Ajusta a largura mínima e máxima das colunas */
     gap: 30px; /* Espaçamento entre as caixas de projeto */
-    margin-top: 20px;
+    margin-top: 10px;
     justify-content: center;
 }
 
 .projeto {
     background-color: rgba(36, 34, 34, 0.27);
-    padding: 20px;
+    padding: 10px;
     border-radius: 10px;
     text-align: center;
     box-shadow: 0 4px 8px rgba(23, 13, 218, 0.1);
@@ -201,6 +202,7 @@ section#projetos {
         gap: 20px; /* Reduz o espaçamento */
     }
 }
+
 
 /* Estilos adicionais para a página de Contato */
 .contact-icons {
