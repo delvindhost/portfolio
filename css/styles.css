@@ -259,6 +259,7 @@ section#projetos h2 {
         font-size: 20px;
     }
 }
+
 /* Estilos para o ícone do menu hambúrguer */
 .menu-toggle {
     display: none; /* Inicia oculto em telas maiores */
