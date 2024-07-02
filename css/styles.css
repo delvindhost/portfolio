@@ -327,7 +327,7 @@ section#projetos {
     padding: 10px;
     position: absolute; /* Posiciona o ícone do menu no canto direito */
     right: 10px; /* Define a distância do lado direito */
-    top: 10px; /* Define a distância do topo */
+    top: 15px; /* Define a distância do topo */
 }
 
 .hamburger {
@@ -342,7 +342,8 @@ section#projetos {
 @media only screen and (max-width: 768px) {
     .menu-toggle {
         display: flex;
-        align-items: right;
+        align-items: center;
+        flex-direction: column; /* Garante que os travessões fiquem um embaixo do outro */
     }
 
     nav {
