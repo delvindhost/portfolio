@@ -287,11 +287,9 @@ section#projetos h2 {
         top: 60px;
         left: 0;
         width: 100%;
+        background-color: #2d2af5;
         padding: 20px;
         box-sizing: border-box;
-        background: linear-gradient(270deg, #0dd883, #2d2af5);
-        background-size: 400% 400%;
-        animation: gradientAnimation 20s ease infinite;
     }
 
     nav.active {
