@@ -170,6 +170,7 @@ section#projetos {
     box-shadow: 0 4px 8px rgba(157, 153, 239, 0.344);
     transition: background-color 0.3s ease; /* Transição suave para a cor de fundo */
     margin: 15px; /* Adiciona espaçamento ao redor de cada projeto */
+    color: #ffffff; /* Define a cor da fonte como branca */
 }
 
 /* Efeito de hover para mouse */
