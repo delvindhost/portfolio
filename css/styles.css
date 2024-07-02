@@ -342,7 +342,7 @@ section#projetos {
 @media only screen and (max-width: 768px) {
     .menu-toggle {
         display: flex;
-        align-items: center;
+        align-items: right;
     }
 
     nav {
