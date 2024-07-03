@@ -136,6 +136,7 @@ section#home {
     text-align: center;
     padding: 20px;
     font-size: 1.2em;
+    color: #ffffff;
 }
 
 section#home h2,
@@ -147,6 +148,20 @@ section#home h2 {
     font-size: 1.2em; /* Ajuste o tamanho do título "Bem-vindo" conforme necessário */
     font-weight: normal; /* Remove o negrito */
 }
+
+/* Estilos para a imagem de perfil */
+.profile-image {
+    width: 140px; /* Ajuste o tamanho conforme necessário */
+    height: 140px; /* Mantém a proporção para o círculo */
+    border-radius: 50%; /* Torna a imagem circular */
+    object-fit: cover; /* Garante que a imagem se ajuste bem ao círculo */
+    margin: 0 auto 15px; /* Centraliza a imagem e adiciona margem inferior */
+    color: #ffffff;
+    z-index: 0;
+    padding: 5px; /* Adiciona espaço para a borda degradê */
+    box-shadow: 0 4px 8px rgb(255, 255, 255); /* Adiciona uma sombra suave */
+}
+
 
 /* Estilos específicos para a página de Projetos */
 section#projetos {
