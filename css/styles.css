@@ -214,6 +214,7 @@ section#projetos {
     display: flex;
     justify-content: center;
     margin-bottom: 10px;
+    color: #ffffff;
 }
 
 .contact-icons a {
@@ -256,6 +257,7 @@ section#projetos {
     margin-bottom: 60px;
     text-align: center; /* Centraliza todo o conteúdo dentro do elemento com id="contato" */
     font-size: 1.2em;
+    color: #ffffff;
 }
 
 /* Estilos para telas menores (responsivo) */
