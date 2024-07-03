@@ -161,7 +161,62 @@ section#home h2 {
     padding: 5px; /* Adiciona espaço para a borda degradê */
     box-shadow: 0 4px 8px rgb(255, 255, 255); /* Adiciona uma sombra suave */
 }
+/* Estilos para a nova imagem da página */
+.foto-da-pagina {
+    width: 100%; /* Ajuste a largura conforme necessário */
+    max-width: 500px; /* Limita a largura máxima */
+    border-radius: 10px; /* Adiciona bordas arredondadas */
+    margin-top: 20px; /* Adiciona espaço acima da imagem */
+}
 
+/* Estilos adicionais para telas menores */
+@media only screen and (max-width: 768px) {
+    .profile-container {
+        width: 120px; /* Ajusta o tamanho da imagem de perfil para telas menores */
+        height: 120px; /* Mantém a proporção para o círculo */
+    }
+
+    .foto-da-pagina {
+        max-width: 90%; /* Ajusta a largura máxima da imagem para telas menores */
+        margin-top: 15px; /* Ajusta a margem superior para telas menores */
+    }
+
+    section#home {
+        padding: 15px; /* Reduz o padding para telas menores */
+    }
+
+    section#home h2 {
+        font-size: 1em; /* Ajusta o tamanho do título para telas menores */
+    }
+
+    section#home p {
+        font-size: 1em; /* Ajusta o tamanho do texto para telas menores */
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .profile-container {
+        width: 100px; /* Ajusta o tamanho da imagem de perfil para telas ainda menores */
+        height: 100px; /* Mantém a proporção para o círculo */
+    }
+
+    .foto-da-pagina {
+        max-width: 85%; /* Ajusta a largura máxima da imagem para telas ainda menores */
+        margin-top: 10px; /* Ajusta a margem superior para telas ainda menores */
+    }
+
+    section#home {
+        padding: 10px; /* Reduz ainda mais o padding para telas menores */
+    }
+
+    section#home h2 {
+        font-size: 0.9em; /* Ajusta o tamanho do título para telas menores */
+    }
+
+    section#home p {
+        font-size: 0.9em; /* Ajusta o tamanho do texto para telas menores */
+    }
+}
 
 /* Estilos específicos para a página de Projetos */
 section#projetos {
