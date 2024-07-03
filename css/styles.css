@@ -257,7 +257,7 @@ section#projetos {
     margin-bottom: 60px;
     text-align: center; /* Centraliza todo o conteúdo dentro do elemento com id="contato" */
     font-size: 1.2em;
-    color: #ffffff;
+    color: #aba4a4;
 }
 
 /* Estilos para telas menores (responsivo) */
@@ -305,7 +305,7 @@ section#projetos {
         margin-bottom: 10px;
         transition: background-color 0.3s ease, color 0.3s ease; /* Adiciona transição para cor do texto */
         text-align: center; /* Centraliza o texto */
-        color: #000000; /* Cor do texto inicial */
+        color: #ffffff; /* Cor do texto inicial */
     }
 
     .formation-info:hover,
